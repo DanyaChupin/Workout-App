@@ -1,6 +1,6 @@
 import { $axios } from '../../api'
 
-const EXERCISES = '/exercises'
+export const EXERCISES = '/exercises'
 const ExerciseService = {
 	getAll: async () => {
 		return $axios.get(EXERCISES)
@@ -9,7 +9,7 @@ const ExerciseService = {
 		return $axios.post(EXERCISES, body)
 	},
 	update: async (body, id) => {
-		return $axios.put(`${EXERCISES}/${id}`)
+		return $axios.put(`${EXERCISES}/${id}`, body)
 	},
 	delete: async id => {
 		return $axios.delete(`${EXERCISES}/${id}`)

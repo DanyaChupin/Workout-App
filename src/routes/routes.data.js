@@ -3,6 +3,8 @@ import Home from '../screens/home/Home'
 import NewExercise from '../screens/newExercise/NewExercise'
 import NewWorkout from '../screens/newWorkout/NewWorkout'
 import Profile from '../screens/profile/Profile'
+import ListWorkout from '../screens/workout/ListWorkout'
+import Workout from '../screens/workout/Workout'
 
 export const routes = [
 	{
@@ -33,6 +35,18 @@ export const routes = [
 		path: '/new-exercise',
 
 		component: NewExercise,
+		isAuth: true
+	},
+	{
+		path: '/workout/:id',
+
+		component: Workout,
+		isAuth: true
+	},
+	{
+		path: '/workouts',
+
+		component: ListWorkout,
 		isAuth: true
 	}
 ]
