@@ -13,7 +13,7 @@ const ExerciseLogService = {
 	// "weight":
 	// "repeat":
 	// "isComplleted": true
-	updateTime: async (body, timeId) => {
+	updateTime: async (timeId, body) => {
 		return $axios.put(`${LOG}/time/${timeId}`, body)
 	},
 	// isComplited

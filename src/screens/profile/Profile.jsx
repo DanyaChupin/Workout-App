@@ -20,7 +20,7 @@ const Profile = () => {
 					height: 365
 				}}
 			>
-				<Header />
+				<Header backLink='/' />
 				<div className={styles.center}>
 					{isLoading ? (
 						<Loader />

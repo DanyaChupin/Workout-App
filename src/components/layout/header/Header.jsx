@@ -31,7 +31,7 @@ const Header = ({ backLink }) => {
 				{pathname !== '/' && pathname !== '/auth' && (
 					<button
 						onClick={() => {
-							navigate('/')
+							navigate(backLink)
 						}}
 					>
 						<TbArrowLeft />
